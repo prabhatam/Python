@@ -32,11 +32,11 @@ chai = "Lemon, Ginger, Masala, Mint"
 print(chai.split(", ")) #it splits and converts into list based on the given condition
 
 chai = "Masala Chai"
-print(chai.find("Chai"))
-print(chai.find("chai"))
+print(chai.find("Chai")) #output is 7 that means chai starts from 7th position
+print(chai.find("chai")) # output is -1 that means it does not find such string
 
 chai = "Masala Chai Chai Chai"
-print(chai.count("Chai"))
+print(chai.count("Chai")) # 3
 
 chai_type = "Masala"
 quantity = 2
@@ -46,9 +46,11 @@ print(order.format(quantity, chai_type)) #output:- I ordered 2 cups of Masala ch
 #lets convert from list to string
 chai_variety = ["Lemon", "Masala","Ginger"]
 print(",".join(chai_variety)) #output is: Lemon,Masala,Ginger
+print(" ".join(chai_variety)) #output is: Lemon Masala Ginger
+print(", ".join(chai_variety)) #output is: Lemon, Masala, Ginger
 
 chai = "Masala chai"
-print(len(chai))
+print(len(chai)) #11
 
 #print one one letter of chai
 for letter in chai:
@@ -60,15 +62,15 @@ for letter in chai:
 chai = "He said, \"Masala chai is awesome\" "
 
 chai = "Masala\nChai"
-print(chai) #output is Masala Chai
-chai = r"Masala\Chai"
+print(chai) #output is Masala and Chai in two lines
+chai = r"Masala\Chai"  # this prints the raw string
 print(chai) #output is Masala\Chai
 
 path = r"c:\\user\\pwd\\"
-print(chai)
+print(chai) #output: c:\\user\\pwd\\
 
 path1=r"c:\user\pwd"
-print(path1)
+print(path1)   # output: c:\user\pwd
 # \ in the last creates the problems
 
 
