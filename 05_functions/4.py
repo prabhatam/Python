@@ -1,5 +1,4 @@
 # 4. Function Returning Multiple Values
-# </summary>
 # Problem: Create a function that returns both the area and circumference of a circle given its radius.
 
 import math
